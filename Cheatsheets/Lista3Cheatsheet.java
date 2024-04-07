@@ -9,19 +9,13 @@ public class Lista3Cheatsheet {
         * Zwraca większą liczbę
         * @param x1  pierwsza liczba
         * @param x2  druga liczba
-        * @return  większa liczba
-        * @throws  IllegalArgumentException if x1 == x2
+        * @return większa liczba
+        * @throws IllegalArgumentException jeśli x1 == x2
         */
     static int maxIntNum(int x1, int x2) {
-        int x = x2;
-        try {
-            if (x1 > x2) x = x1;
-            else if (x1 == x2)
-                throw new IllegalArgumentException("Wyjątek w metodzie maxIntNum: x1 == x2 == " + x);
-        } catch (IllegalArgumentException e) {
-            System.out.println(e.getMessage());
-        }
-        return x;
+        if (x1 > x2) return x1;
+        else if (x2 > x1) return x2;
+        else throw new IllegalArgumentException("Wyjątek w metodzie maxIntNum: x1 == x2 == " + x1);
     }
 
     /**
@@ -170,7 +164,11 @@ public class Lista3Cheatsheet {
             System.out.println("Ten blok wykona się za każdym razem");
         }
 
-         System.out.println(maxIntNum(1, 1));
+        try {
+            System.out.println(maxIntNum(1, 1));
+        } catch (IllegalArgumentException e) {
+            System.out.println(e.getMessage());
+        }
 
         //
         // Tablice dynamiczne - ArrayList
