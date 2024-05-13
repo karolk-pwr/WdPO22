@@ -1,4 +1,7 @@
 import psy.Pies;
+/**
+ * Klasa PiesDemo
+ */
 public class PsyDemo {
     public static void main(String[] args) {
         Pies pies_3 = new Pies();

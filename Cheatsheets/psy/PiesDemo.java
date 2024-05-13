@@ -1,10 +1,9 @@
 package psy;
 
+/**
+ * Klasa psy.PiesDemo
+ */
 public class PiesDemo {
-    /**
-     * Klasa psy.PiesDemo
-     * @param args
-     */
     public static void main(String[] args) {
         Pies pies_1 = new Pies(5, "welsh corgi", "Kokos");
         Pies pies_2 = new Pies(2, "samojed", "Okami");
