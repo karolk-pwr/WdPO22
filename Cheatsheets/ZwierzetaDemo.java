@@ -2,20 +2,20 @@ import zwierzeta.*;
 
 public class ZwierzetaDemo {
     public static void main(String[] args) {
-        Zwierz jakis_zwierz_1 = new Zwierz(10, "Homo Sapiens");
-        Pies pies_1 = new Pies(5, "Welsh corgi", "Kokos");
-        Kot kot_1 = new Kot(6, "Czarny", "Salem");
+        Zwierz jakis_zwierz = new Zwierz(10, "homo sapiens");
+        Pies pies = new Pies(5, "welsh corgi", "Kokos");
+        Kot kot = new Kot(6, "munchkin", "Salem");
         //
-        System.out.print("Gatunek psa przed wywołaniem metody set_gatunek(): " + pies_1.get_gatunek());
-        pies_1.set_gatunek("Canis familiaris");
-        System.out.println(" oraz po: " + pies_1.get_gatunek());
+        System.out.print("Gatunek psa przed wywołaniem metody set_gatunek(): " + pies.get_gatunek());
+        pies.set_gatunek("Canis familiaris");
+        System.out.println(" oraz po: " + pies.get_gatunek());
         //
-        System.out.print("Gatunek kota przed wywołaniem metody set_gatunek(): " + kot_1.get_gatunek());
-        kot_1.set_gatunek("Felis catus");
-        System.out.println(" oraz po: " + kot_1.get_gatunek());
+        System.out.print("Gatunek kota przed wywołaniem metody set_gatunek(): " + kot.get_gatunek());
+        kot.set_gatunek("Felis catus");
+        System.out.println(" oraz po: " + kot.get_gatunek());
         //
-        jakis_zwierz_1.getInfo();
-        pies_1.getInfo();
-        kot_1.getInfo();
+        jakis_zwierz.getInfo();
+        pies.getInfo();
+        kot.getInfo();
     }
 }
